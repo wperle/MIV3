@@ -577,6 +577,7 @@ footer a:hover {
 #copyright{
     text-align: center;
     padding: 10px 0px;
+<<<<<<< HEAD
 }
 
 /*--Fix pour glyphicons---*/
@@ -588,4 +589,6 @@ footer a:hover {
          url('fonts/glyphicons-halflings-regular.woff') format('woff'), 
          url('fonts/glyphicons-halflings-regular.ttf') format('truetype'), 
          url('fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+=======
+>>>>>>> FETCH_HEAD
 }
