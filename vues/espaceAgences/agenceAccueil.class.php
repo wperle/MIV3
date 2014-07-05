@@ -1,14 +1,4 @@
 <?php 
-<<<<<<< HEAD
-=======
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
->>>>>>> FETCH_HEAD
 /**
  * Description of agenceAccueil
  *
@@ -17,7 +7,6 @@
 class agenceAccueil {
     
     public function afficheAgenceAccueil() {
-<<<<<<< HEAD
 ?>       
         <div class="container-fluid block3">
             <!-- sidebar -->
@@ -42,7 +31,8 @@ class agenceAccueil {
                             les critères de selection à insèrer.
                         </p>
                         <p>
-                            Permet à l'agence de chercher une ou des annonce(s) bien précise
+                            Permet à l'agence de chercher une ou des annonce(s)
+                            d'un bien précise
                         </p>
                     </div>
                 </div>
@@ -432,11 +422,6 @@ class agenceAccueil {
     </div>
     <hr/>
 
-=======
-?>
-
-        alooo
->>>>>>> FETCH_HEAD
         
 <?php
      

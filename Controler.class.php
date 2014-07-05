@@ -20,45 +20,29 @@ class Controler
          */
         public function gerer()
         {
-<<<<<<< HEAD
            
                 
-=======
-
->>>>>>> FETCH_HEAD
                 switch ($_GET['page']) {
                         case 'accueil':
                                 $this->afficherAccueil();
                                 break;
-<<<<<<< HEAD
                         case 'creerCompte':
                                 $this->creationCompte();
                                 break; 
-=======
->>>>>>> FETCH_HEAD
                         case 'forfait':
                                 $this->afficherForfait();
                                 break; 
                          case 'blog':
                                 $this->afficherBlog();
                                 break;  
-<<<<<<< HEAD
                           
-=======
-                            
->>>>>>> FETCH_HEAD
                             
                         default:
                                 $this->afficherAccueil();
                                 break;
                 }
-<<<<<<< HEAD
         
         }  
-=======
-        }
-        
->>>>>>> FETCH_HEAD
         
         
         private function afficherAccueil()
@@ -66,7 +50,6 @@ class Controler
             $oNav = new Nav();
             $oNav->afficheNavigateur('accueil');
 
-<<<<<<< HEAD
             $page = new Accueil();
             $page->afficheContenuAccueil();
             
@@ -83,19 +66,6 @@ class Controler
 
         }
         
-=======
-            $page = new Vue();
-//          $page->afficheHeader();
-//          $page->afficheNavigateur('accueil');
-            $page->afficheContenuAccueil();
-//          $page->affichePiedPage();
-                
-
-                
-            
-        }
-
->>>>>>> FETCH_HEAD
         private function afficherForfait() {
             
             $oNav = new Nav();
@@ -123,21 +93,13 @@ class Controler
         
         
     /****************************** Back office : Agence immobilière ********/
-<<<<<<< HEAD
     public function gererAgenceImmobiliere(){
         
             switch ($_GET['section']) {
-=======
-    private function gererAgenceImmobiliere(){
-
-        if(isset($_GET['page'])){
-            switch ($_GET['page']) {
->>>>>>> FETCH_HEAD
 
                 case 'agenceAccueil':
                     $this->agenceAccueil();
                     break;
-<<<<<<< HEAD
                 case 'ResponsableAgence':
                     $this->profilResponsableAgence();
                     break;
@@ -332,34 +294,6 @@ class Controler
     }
 
 }
-=======
-
-                default:
-                    $this->agenceAccueil();
-                    break;
-            }
-        }else{
-            //$this->interfaceLogin();
-        }
-    }  
-      
-    private function agenceAccueil()
-    {
-        $page = new agenceAccueil();
-        $page->afficheAgenceAccueil();
-    }
-
-       
-}
-?>
-
-
-
-
-
-
-
->>>>>>> FETCH_HEAD
 
 
 

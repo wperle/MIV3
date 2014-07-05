@@ -9,7 +9,6 @@
 		$_GET['requete'] = '';
 	}
     
-<<<<<<< HEAD
         if(empty($_GET['page']))
 	{
 		$_GET['page'] = '';
@@ -22,10 +21,4 @@
          
         
         
-=======
-	
-	
-   
-   
->>>>>>> FETCH_HEAD
 ?>

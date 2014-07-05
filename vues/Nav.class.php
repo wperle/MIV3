@@ -17,11 +17,7 @@ class Nav {
 	 * @access public
 	 * 
 	 */
-<<<<<<< HEAD
     public function afficheNavigateur($pageActive="") {
-=======
-    public function afficheNavigateur($pageActive) {
->>>>>>> FETCH_HEAD
 
 ?>
     <body>
@@ -45,14 +41,9 @@ class Nav {
                          </a>
                      </li>
                  </ul>
-<<<<<<< HEAD
                  <?php if ($_GET['page']<>'agenceAccueil') { ?>
                  
                  <form action="index.php?page=agenceAccueil" class="navbar-form navbar-left" method="POST">
-=======
-
-                 <form action="espaceAgences/index.php?page=agenceAccueil" class="navbar-form navbar-left" role="form">
->>>>>>> FETCH_HEAD
                      <div class="form-group">
                          <input type="text" placeholder="Courriel" class="form-control">
                      </div>
@@ -60,7 +51,6 @@ class Nav {
                          <input type="password" placeholder="Mot de passe" class="form-control">
                      </div>
                      <button type="submit" class="btn btn-success">Connexion</button>
-<<<<<<< HEAD
                      <div class="form-group divCreerCompte">
                          <a href="index.php?page=creerCompte"><p>Créer un</p><p>compte</p></a></div>
                  </form>
@@ -68,11 +58,6 @@ class Nav {
                  <?php } ?>
                  
                  <!-- nav -->
-=======
-                     <div class="form-group divCreerCompte"><a href="fr/creationcompte.html"><p>Créer un</p><p>compte</p></a></div>
-                 </form>
-            <!-- nav -->
->>>>>>> FETCH_HEAD
                     <nav>
                             <ul class="nav navbar-nav navbar-right">
                                 <li class="dropdown <?php echo ($pageActive == 'accueil' ? 'active' : '' ) ?>">
@@ -117,11 +102,7 @@ class Nav {
                                     <a href="index.php?page=forfait">Nos Forfaits</a>
                                 </li>
                                 <li>
-<<<<<<< HEAD
                                     <a href="#">Contact</a>
-=======
-                                    <a href="">Contact</a>
->>>>>>> FETCH_HEAD
                                 </li>
                             </ul>
                         </nav>

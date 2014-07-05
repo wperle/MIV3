@@ -3,11 +3,7 @@
     <type>org.netbeans.modules.php.project</type>
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/php-project/1">
-<<<<<<< HEAD
             <name>preBetaV3</name>
-=======
-            <name>preBetaV1</name>
->>>>>>> FETCH_HEAD
         </data>
     </configuration>
 </project>
