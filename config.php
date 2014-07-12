@@ -16,9 +16,9 @@
 		foreach ($dossierClasse as $dossier) 
 		{
 			//var_dump('./'.$dossier.$class.'.class.php');
-			if(file_exists('./'.$dossier.$class.'.class.php'))
+			if(file_exists(BASE.'/'.$dossier.$class.'.class.php'))
 			{
-				require_once('./'.$dossier.$class.'.class.php');
+				require_once(BASE.'/'.$dossier.$class.'.class.php');
 			}
 		}
 		

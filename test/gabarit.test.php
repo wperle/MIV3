@@ -14,10 +14,24 @@
 			<h1>Test - Modèles</h1>
 		</div>
 		<div id="contenu">
-			<?php // Placer vos tests unitaires ici... ?>
+			<?php 
+                        
+                        echo "<h2>Méthode getVilles()</h2>";
+				require_once (BASE.'/modeles/Villes.class.php');
+				$oVilles = new Villes();
+				$aVilles = $oVilles->getVilles();
+				var_dump($aVilles);
+			
+                        echo "<h2>Méthode getAnnonces()</h2>";
+				require_once (BASE.'/modeles/Annonces.class.php');
+				$oAnnonces = new Annonces();
+				$aAnnonces = $oAnnonces->getAnnonces();
+				var_dump($aAnnonces);
+                        ?>
+                    
 		</div>
 		<div id="footer">
-
+                    
 		</div>
 	</body>
 </html>

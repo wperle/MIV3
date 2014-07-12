@@ -5,7 +5,7 @@
  *
  * @author belhmidi
  */
-class blog {
+class Blog {
     
         public function afficheContenuBlog() {
         ?>

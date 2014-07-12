@@ -11,9 +11,29 @@
  */
 
 	require_once("./config.php");
-	
-	
-	// Mettre ici le code de gestion de la requête AJAX
-	
 
+	// Mettre ici le code de gestion de la requête AJAX
+        require_once("./var.init.php");
+        $oMenuRecherche = new MenuRecherche();
+
+        echo '<option value="tousTypeDeBien"';
+        //if ($_POST['tousTypeDeBien']=="tous"){
+        //    echo ' selected=\"selected\"';     
+        //} else {
+        //    echo '';
+        //}
+        echo '>Toutes</option>';
+
+        foreach($oMenuRecherche->getTypeDeBienParCat($_GET['categorie']) as $aTypeDeBien) {
+            echo "
+                   <option value=\"".htmlentities($aTypeDeBien[1])."\"
+                           name=\"categorie".htmlentities($aTypeDeBien[1])."\"
+                 ";
+            //if ($_POST['categorie']==$aTypeDeBien[0]){
+            //    echo 'selected=\"selected\"';
+            //} else {
+            //    echo '';
+            //}
+            echo '>'.htmlentities(ucfirst($aTypeDeBien[0])).'</option>';
+        }
 ?>
